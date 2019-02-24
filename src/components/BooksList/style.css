@@ -1,0 +1,93 @@
+.List-Books {
+  margin: 0px auto 0;
+  max-width: 70em;
+  padding: 0;
+}
+
+.Books-Filtered-Number {
+  padding-bottom: 1em;
+}
+
+.Books-Filtered-Confirmation {
+  color: #07b607;
+}
+
+.Book {
+  overflow: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: box-shadow 0.2s ease;
+  padding-right: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px rgb(177, 167, 167);
+  margin-bottom: 10px;
+}
+
+.Book:hover {
+  box-shadow: 1px 1px 12px 5px rgba(148, 148, 148, 0.8);
+}
+
+.Book-Image {
+  /* Fix the image size to avoid jerky content movement once images are loaded */
+  height: 190px;
+  width: 140px;
+  display: inline-block;
+  margin: 10px 0 0 0;
+  vertical-align: top;
+  background: #f3f3f3; /* displayed when the image didn't finish loading */
+}
+
+/* Info displayed under (mobile) or on the right (desktop) of the picture  */
+.Book-Info {
+  text-align: left;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.Book-Header {
+  font-size: 110%;
+  margin: 0.4em 0.2em 0;
+  font-weight: 600;
+  color: #0173e2;
+  cursor: pointer;
+}
+
+.Book-Author {
+  font-size: 85%;
+  color: #5a5854;
+}
+
+.Book-Publisher {
+  color: #442d29;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.Book-Description {
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 430px) {
+  .Book-Image {
+    margin: 0 10px 0 0;
+    float: left;
+  }
+
+  .Book-Info {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .List-Books {
+    max-width: 180px;
+  }
+
+  .Book {
+    padding-right: 0;
+  }
+
+  .Book-Description {
+    display: none;
+  }
+}
