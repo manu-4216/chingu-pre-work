@@ -4,14 +4,6 @@
   padding: 0;
 }
 
-.Books-Filtered-Number {
-  padding-bottom: 1em;
-}
-
-.Books-Filtered-Confirmation {
-  color: #07b607;
-}
-
 .Book {
   overflow: auto;
   margin-left: 10px;
